@@ -1,0 +1,2 @@
+# ideal-memory
+Golang编写的计算机资源指标的采集工具，集成prometheus构建完整的监控系统
