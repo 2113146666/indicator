@@ -1,7 +1,8 @@
 # Performance indicator collection
 Golang编写的计算机资源指标的采集工具，集成prometheus构建完整的监控系统
 
-├── cmd/              # 存放可执行入口文件的主程序目录  
+├── cmd/              # 存放可执行入口文件的主程序目录
+
 │   └── myapp/        # 每个子目录对应一个可执行程序（如：`main.go`）
 
 │       └── main.go
