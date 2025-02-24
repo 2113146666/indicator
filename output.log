@@ -43,3 +43,1057 @@
  <nil> 
 [2025/02/18 18:17:43 main.go][50]: runmode - agent 
 [2025/02/18 18:17:43 main.go][78]: {false warning info agent 31536000 []  } 
+[2025/02/24 14:34:56 main.go][61]:  Çý¶¯Æ÷ D ÖÐµÄ¾íÊÇ ÐÂ¼Ó¾í
+ ¾íµÄÐòÁÐºÅÊÇ 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator µÄÄ¿Â¼
+
+2025/02/17  22:47    <DIR>          .
+2025/02/15  15:19    <DIR>          ..
+2025/02/15  15:59    <DIR>          .trunk
+2025/02/15  15:21    <DIR>          api
+2025/02/19  01:38    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/02/17  22:43                28 go.mod
+2025/02/15  15:08    <DIR>          internal
+2025/02/17  22:47         2,493,440 main.exe
+2025/02/24  22:34             1,750 main.go
+2025/02/17  22:34    <DIR>          output
+2025/02/19  02:17             5,221 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               5 ¸öÎÄ¼þ      2,501,781 ×Ö½Ú
+              14 ¸öÄ¿Â¼ 40,038,785,024 ¿ÉÓÃ×Ö½Ú
+ <nil> 
+[2025/02/24 14:34:56 main.go][48]: runmode - agent 
+[2025/02/24 14:34:56 main.go][75]: {false warning info agent 31536000 []  } 
+[2025/02/24 15:01:42 main.go][49]: runmode - agent 
+[2025/02/24 15:01:42 main.go][51]:  exit status 1 
+[2025/02/24 15:01:42 main.go][76]: {false warning info agent 31536000 []  } 
+[2025/02/24 15:06:46 main.go][49]: runmode - agent 
+[2025/02/24 15:06:46 main.go][51]:  exit status 1 
+[2025/02/24 15:06:46 main.go][76]: {false warning info agent 31536000 []  } 
+[2025/02/24 15:06:56 main.go][49]: runmode - agent 
+[2025/02/24 15:06:56 main.go][51]:  exit status 1 
+[2025/02/24 15:06:56 main.go][76]: {false warning info agent 31536000 []  } 
+[2025/02/24 15:07:35 main.go][48]: runmode - agent 
+[2025/02/24 15:07:35 main.go][50]:  exit status 1 
+[2025/02/24 15:07:35 main.go][75]: {false warning info agent 31536000 []  } 
+[2025/02/24 15:08:57 main.go][48]: runmode - agent 
+[2025/02/24 15:08:57 main.go][50]:  exit status 1 
+[2025/02/24 15:08:57 main.go][75]: {false warning info agent 31536000 []  } 
+[2025/02/24 15:11:08 main.go][48]: runmode - agent 
+[2025/02/24 15:11:08 main.go][50]:  exit status 1 
+[2025/02/24 15:11:08 main.go][75]: {false warning info agent 31536000 []  } 
+[2025/02/24 15:12:45 main.go][44]: runmode - controller 
+[2025/02/24 15:16:45 main.go][47]: 0xd998e0 
+[2025/02/24 15:16:45 main.go][50]: runmode - controller 
+[2025/02/24 15:19:28 main.go][51]: runmode - controller 
+[2025/02/24 15:22:15 main.go][51]: C:\Users\329F~1\AppData\Local\Temp\go-build640584653\b001\exe\indicator.exe 
+[2025/02/24 15:22:15 main.go][54]: runmode - controller 
+[2025/02/24 15:29:46 main.go][59]: runmode - test 
+[2025/02/24 15:29:50 main.go][65]: upload end 
+[2025/02/24 15:34:31 main.go][59]: runmode - test 
+[2025/02/24 15:34:31 localclient.go][36]: exit status 1 
+[2025/02/24 15:34:31 localclient.go][38]: run cmd ==>  cd "d:\Git_Code\indicator\indicator\" 
+result:   
+[2025/02/24 15:34:31 localclient.go][36]: exit status 1 
+[2025/02/24 15:34:31 localclient.go][38]: run cmd ==>  $env:GOOS = "linux" 
+result:   
+[2025/02/24 15:34:31 localclient.go][36]: exit status 1 
+[2025/02/24 15:34:31 localclient.go][38]: run cmd ==>  $env:GOARCH = "amd64" 
+result:   
+[2025/02/24 15:34:35 localclient.go][36]: exit status 1 
+[2025/02/24 15:34:35 localclient.go][38]: run cmd ==>  go build -o indicator .\main.go 
+result:   
+[2025/02/24 15:34:35 localclient.go][36]: context deadline exceeded 
+[2025/02/24 15:34:35 localclient.go][38]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:   
+[2025/02/24 15:34:35 main.go][65]: upload end 
+[2025/02/24 15:36:13 main.go][59]: runmode - test 
+[2025/02/24 15:36:13 localclient.go][36]: exit status 1 
+[2025/02/24 15:36:13 localclient.go][38]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:   
+[2025/02/24 15:36:13 localclient.go][36]: exit status 1 
+[2025/02/24 15:36:13 localclient.go][38]: run cmd ==>  $env:GOOS = "linux" 
+result:   
+[2025/02/24 15:36:13 localclient.go][36]: exit status 1 
+[2025/02/24 15:36:13 localclient.go][38]: run cmd ==>  $env:GOARCH = "amd64" 
+result:   
+[2025/02/24 15:36:17 localclient.go][36]: exit status 1 
+[2025/02/24 15:36:17 localclient.go][38]: run cmd ==>  go build -o indicator .\main.go 
+result:   
+[2025/02/24 15:36:17 localclient.go][36]: context deadline exceeded 
+[2025/02/24 15:36:17 localclient.go][38]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:   
+[2025/02/24 15:36:17 main.go][65]: upload end 
+[2025/02/24 15:40:42 main.go][59]: runmode - test 
+[2025/02/24 15:40:42 localclient.go][36]: exit status 1 
+[2025/02/24 15:40:42 localclient.go][38]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:   
+[2025/02/24 15:40:42 localclient.go][36]: exit status 1 
+[2025/02/24 15:40:42 localclient.go][38]: run cmd ==>  $env:GOOS = "linux" 
+result:   
+[2025/02/24 15:40:42 localclient.go][36]: exit status 1 
+[2025/02/24 15:40:42 localclient.go][38]: run cmd ==>  $env:GOARCH = "amd64" 
+result:   
+[2025/02/24 15:40:44 localclient.go][36]: exit status 1 
+[2025/02/24 15:40:44 localclient.go][38]: run cmd ==>  go build -o indicator .\main.go 
+result:   
+[2025/02/24 15:40:44 localclient.go][36]: context deadline exceeded 
+[2025/02/24 15:40:44 localclient.go][38]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:   
+[2025/02/24 15:40:44 main.go][65]: upload end 
+[2025/02/24 15:41:34 main.go][59]: runmode - test 
+[2025/02/24 15:41:34 localclient.go][36]: exit status 1 
+[2025/02/24 15:41:34 localclient.go][38]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:   
+[2025/02/24 15:41:34 localclient.go][36]: exit status 1 
+[2025/02/24 15:41:34 localclient.go][38]: run cmd ==>  $env:GOOS = "linux" 
+result:   
+[2025/02/24 15:41:34 localclient.go][36]: exit status 1 
+[2025/02/24 15:41:34 localclient.go][38]: run cmd ==>  $env:GOARCH = "amd64" 
+result:   
+[2025/02/24 15:41:36 localclient.go][36]: exit status 1 
+[2025/02/24 15:41:36 localclient.go][38]: run cmd ==>  go build -o indicator .\main.go 
+result:   
+[2025/02/24 15:41:36 localclient.go][36]: context deadline exceeded 
+[2025/02/24 15:41:36 localclient.go][38]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:   
+[2025/02/24 15:41:36 main.go][65]: upload end 
+[2025/02/24 15:48:23 main.go][59]: runmode - test 
+[2025/02/24 15:48:23 localclient.go][36]: exit status 1 
+[2025/02/24 15:48:23 localclient.go][38]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:   
+[2025/02/24 15:48:23 localclient.go][36]: exit status 1 
+[2025/02/24 15:48:23 localclient.go][38]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:   
+[2025/02/24 15:48:23 localclient.go][36]: exit status 255 
+[2025/02/24 15:48:23 localclient.go][38]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:   
+[2025/02/24 15:48:23 main.go][63]: upload end 
+[2025/02/24 15:50:13 main.go][59]: runmode - test 
+[2025/02/24 15:50:13 localclient.go][33]: exit status 1 
+[2025/02/24 15:50:13 localclient.go][35]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ 
+[2025/02/24 15:50:13 localclient.go][33]: exit status 1 
+[2025/02/24 15:50:13 localclient.go][35]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ 
+[2025/02/24 15:50:14 localclient.go][33]: exit status 255 
+[2025/02/24 15:50:14 localclient.go][35]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:  ssh: Could not resolve hostname "d: \344\270\215\347\237\245\351\201\223\350\277\231\346\240\267\347\232\204\344\270\273\346\234\272\343\200\202 
+scp: Connection closed
+ 
+[2025/02/24 15:50:14 main.go][63]: upload end 
+[2025/02/24 15:51:24 main.go][59]: runmode - test 
+[2025/02/24 15:51:25 localclient.go][33]: exit status 1 
+[2025/02/24 15:51:25 localclient.go][35]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ 
+[2025/02/24 15:51:25 localclient.go][33]: exit status 1 
+[2025/02/24 15:51:25 localclient.go][35]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ 
+[2025/02/24 15:51:25 localclient.go][33]: exit status 255 
+[2025/02/24 15:51:25 localclient.go][35]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:  ssh: Could not resolve hostname "d: \344\270\215\347\237\245\351\201\223\350\277\231\346\240\267\347\232\204\344\270\273\346\234\272\343\200\202 
+scp: Connection closed
+ 
+[2025/02/24 15:51:25 main.go][63]: upload end 
+[2025/02/24 15:53:21 main.go][59]: runmode - test 
+[2025/02/24 15:53:21 localclient.go][34]: exit status 1 
+[2025/02/24 15:53:21 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 15:53:21 localclient.go][34]: exit status 1 
+[2025/02/24 15:53:21 localclient.go][36]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 15:53:22 localclient.go][34]: exit status 255 
+[2025/02/24 15:53:22 localclient.go][36]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:  ssh: Could not resolve hostname "d: \344\270\215\347\237\245\351\201\223\350\277\231\346\240\267\347\232\204\344\270\273\346\234\272\343\200\202 
+scp: Connection closed
+ string 
+[2025/02/24 15:53:22 main.go][63]: upload end 
+[2025/02/24 16:02:14 main.go][59]: runmode - test 
+[2025/02/24 16:02:14 localclient.go][34]: exit status 1 
+[2025/02/24 16:02:14 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:02:14 localclient.go][34]: exit status 1 
+[2025/02/24 16:02:14 localclient.go][36]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:02:15 localclient.go][34]: exit status 255 
+[2025/02/24 16:02:15 localclient.go][36]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:  ssh: Could not resolve hostname "d: \344\270\215\347\237\245\351\201\223\350\277\231\346\240\267\347\232\204\344\270\273\346\234\272\343\200\202 
+scp: Connection closed
+ string 
+[2025/02/24 16:02:15 main.go][63]: upload end 
+[2025/02/24 16:02:44 main.go][59]: runmode - test 
+[2025/02/24 16:02:45 localclient.go][34]: exit status 1 
+[2025/02/24 16:02:45 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:02:45 localclient.go][34]: exit status 1 
+[2025/02/24 16:02:45 localclient.go][36]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:02:45 localclient.go][34]: exit status 255 
+[2025/02/24 16:02:45 localclient.go][36]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:  ssh: Could not resolve hostname "d: \344\270\215\347\237\245\351\201\223\350\277\231\346\240\267\347\232\204\344\270\273\346\234\272\343\200\202 
+scp: Connection closed
+ string 
+[2025/02/24 16:02:45 main.go][63]: upload end 
+[2025/02/24 16:03:48 main.go][59]: runmode - test 
+[2025/02/24 16:03:48 localclient.go][34]: exit status 1 
+[2025/02/24 16:03:48 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:03:48 localclient.go][34]: exit status 1 
+[2025/02/24 16:03:48 localclient.go][36]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:03:48 localclient.go][34]: exit status 255 
+[2025/02/24 16:03:48 localclient.go][36]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:  ssh: Could not resolve hostname "d: \344\270\215\347\237\245\351\201\223\350\277\231\346\240\267\347\232\204\344\270\273\346\234\272\343\200\202 
+scp: Connection closed
+ string 
+[2025/02/24 16:03:48 main.go][63]: upload end 
+[2025/02/24 16:05:09 main.go][59]: runmode - test 
+[2025/02/24 16:05:09 localclient.go][34]: exit status 1 
+[2025/02/24 16:05:09 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:05:09 localclient.go][34]: exit status 1 
+[2025/02/24 16:05:09 localclient.go][36]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:05:10 localclient.go][34]: exit status 255 
+[2025/02/24 16:05:10 localclient.go][36]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:  ssh: Could not resolve hostname "d: \344\270\215\347\237\245\351\201\223\350\277\231\346\240\267\347\232\204\344\270\273\346\234\272\343\200\202 
+scp: Connection closed
+ string 
+[2025/02/24 16:05:10 main.go][63]: upload end 
+[2025/02/24 16:08:38 main.go][60]: runmode - test 
+[2025/02/24 16:08:38 localclient.go][34]: exit status 1 
+[2025/02/24 16:08:38 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:08:38 localclient.go][34]: exit status 1 
+[2025/02/24 16:08:38 localclient.go][36]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:08:38 main.go][65]: scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ string 
+[2025/02/24 16:08:39 localclient.go][34]: exit status 255 
+[2025/02/24 16:08:39 localclient.go][36]: run cmd ==>  scp -P 22 "D:\Git_Code\indicator\indicator\indicator" root@106.15.6.164:/root/ 
+result:  ssh: Could not resolve hostname "d: \344\270\215\347\237\245\351\201\223\350\277\231\346\240\267\347\232\204\344\270\273\346\234\272\343\200\202 
+scp: Connection closed
+ string 
+[2025/02/24 16:08:39 main.go][67]: upload end 
+[2025/02/24 16:10:10 main.go][60]: runmode - test 
+[2025/02/24 16:10:10 localclient.go][34]: exit status 1 
+[2025/02/24 16:10:10 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:10:10 localclient.go][34]: exit status 1 
+[2025/02/24 16:10:10 localclient.go][36]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:10:10 main.go][65]: scp -P 22 "D:\\Git_Code\\indicator\\indicator\\indicator" root@106.15.6.164:/root/ string 
+[2025/02/24 16:10:10 localclient.go][34]: exit status 255 
+[2025/02/24 16:10:10 localclient.go][36]: run cmd ==>  scp -P 22 "D:\\Git_Code\\indicator\\indicator\\indicator" root@106.15.6.164:/root/ 
+result:  ssh: Could not resolve hostname "d: \344\270\215\347\237\245\351\201\223\350\277\231\346\240\267\347\232\204\344\270\273\346\234\272\343\200\202 
+scp: Connection closed
+ string 
+[2025/02/24 16:10:10 main.go][67]: upload end 
+[2025/02/24 16:10:48 main.go][60]: runmode - test 
+[2025/02/24 16:10:48 localclient.go][34]: exit status 1 
+[2025/02/24 16:10:48 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:10:48 localclient.go][34]: exit status 1 
+[2025/02/24 16:10:48 localclient.go][36]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:10:48 main.go][65]: scp -P 22 "D:/Git_Code/indicator/indicator/indicator" root@106.15.6.164:/root/ string 
+[2025/02/24 16:10:49 localclient.go][34]: exit status 255 
+[2025/02/24 16:10:49 localclient.go][36]: run cmd ==>  scp -P 22 "D:/Git_Code/indicator/indicator/indicator" root@106.15.6.164:/root/ 
+result:  ssh: Could not resolve hostname "d: \344\270\215\347\237\245\351\201\223\350\277\231\346\240\267\347\232\204\344\270\273\346\234\272\343\200\202 
+scp: Connection closed
+ string 
+[2025/02/24 16:10:49 main.go][67]: upload end 
+[2025/02/24 16:13:50 main.go][60]: runmode - test 
+[2025/02/24 16:13:50 localclient.go][34]: exit status 1 
+[2025/02/24 16:13:50 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:13:50 localclient.go][34]: exit status 1 
+[2025/02/24 16:13:50 localclient.go][36]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:13:50 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:13:50 localclient.go][36]: run cmd ==>  scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ 
+result:   string 
+[2025/02/24 16:13:50 main.go][67]: upload end 
+[2025/02/24 16:14:21 main.go][60]: runmode - test 
+[2025/02/24 16:14:21 localclient.go][34]: exit status 1 
+[2025/02/24 16:14:21 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:14:21 localclient.go][34]: exit status 1 
+[2025/02/24 16:14:21 localclient.go][36]: run cmd ==>  $env:GOOS = "linux" && $env:GOARCH = "amd64" && go build -o indicator .\main.go && $env:GOOS = "windows"  
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:14:21 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:14:22 localclient.go][36]: run cmd ==>  scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ 
+result:   string 
+[2025/02/24 16:14:22 main.go][67]: upload end 
+[2025/02/24 16:23:19 main.go][60]: runmode - test 
+[2025/02/24 16:23:19 localclient.go][34]: exit status 1 
+[2025/02/24 16:23:19 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:23:19 localclient.go][34]: exit status 2 
+[2025/02/24 16:23:19 localclient.go][36]: run cmd ==>  set GOOS=linux && go build -ldflags="-s -w -extldflags=-static" -o indicator .\main.go && set GOOS=windows 
+result:  invalid value "\"-s" for flag -ldflags: missing =<value> in <pattern>=<value>
+usage: go build [-o output] [build flags] [packages]
+Run 'go help build' for details.
+ string 
+[2025/02/24 16:23:19 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:23:20 localclient.go][36]: run cmd ==>  scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ 
+result:   string 
+[2025/02/24 16:23:20 main.go][67]: upload end 
+[2025/02/24 16:24:05 main.go][60]: runmode - test 
+[2025/02/24 16:24:05 localclient.go][34]: exit status 1 
+[2025/02/24 16:24:05 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:24:06 localclient.go][34]: exit status 2 
+[2025/02/24 16:24:06 localclient.go][36]: run cmd ==>  set GOOS=linux && go build -o indicator ./main.go && set GOOS=windows 
+result:  go: unsupported GOOS/GOARCH pair linux /amd64
+ string 
+[2025/02/24 16:24:06 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:24:06 localclient.go][36]: run cmd ==>  scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ 
+result:   string 
+[2025/02/24 16:24:06 main.go][67]: upload end 
+[2025/02/24 16:33:07 main.go][60]: runmode - test 
+[2025/02/24 16:33:07 localclient.go][34]: exit status 1 
+[2025/02/24 16:33:07 localclient.go][36]: run cmd ==>  d: && cd "d:\Git_Code\indicator\indicator\" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:33:07 localclient.go][34]: exit status 1 
+[2025/02/24 16:33:07 localclient.go][36]: run cmd ==>  $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:33:07 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:33:08 localclient.go][36]: run cmd ==>  scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ 
+result:   string 
+[2025/02/24 16:33:08 main.go][67]: upload end 
+[2025/02/24 16:33:45 main.go][60]: runmode - test 
+[2025/02/24 16:33:45 localclient.go][36]: run cmd ==>  d: ; cd "d:\Git_Code\indicator\indicator\" 
+result:   string 
+[2025/02/24 16:33:45 localclient.go][34]: exit status 1 
+[2025/02/24 16:33:45 localclient.go][36]: run cmd ==>  $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:33:45 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:33:46 localclient.go][36]: run cmd ==>  scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ 
+result:   string 
+[2025/02/24 16:33:46 main.go][67]: upload end 
+[2025/02/24 16:34:46 main.go][60]: runmode - test 
+[2025/02/24 16:34:46 localclient.go][36]: run cmd ==>  d: ; cd "d:\Git_Code\indicator\indicator\" 
+result:   string 
+[2025/02/24 16:34:46 localclient.go][34]: exit status 1 
+[2025/02/24 16:34:46 localclient.go][36]: run cmd ==>  $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:34:46 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:34:47 localclient.go][36]: run cmd ==>  scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ 
+result:   string 
+[2025/02/24 16:34:47 main.go][67]: upload end 
+[2025/02/24 16:36:24 main.go][60]: runmode - test 
+[2025/02/24 16:36:24 localclient.go][36]: run cmd ==>  d: ; cd "d:\Git_Code\indicator\indicator\" 
+result:   string 
+[2025/02/24 16:36:24 localclient.go][34]: exit status 1 
+[2025/02/24 16:36:24 localclient.go][36]: run cmd ==>  $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:36:24 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:36:25 localclient.go][36]: run cmd ==>  scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ 
+result:   string 
+[2025/02/24 16:36:25 main.go][67]: upload end 
+[2025/02/24 16:37:36 main.go][60]: runmode - test 
+[2025/02/24 16:37:36 localclient.go][36]: run cmd ==>  d: ; cd "d:/Git_Code/indicator/indicator/"; dir 
+result:   string 
+[2025/02/24 16:37:36 localclient.go][34]: exit status 1 
+[2025/02/24 16:37:36 localclient.go][36]: run cmd ==>  $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" 
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:37:36 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:37:37 localclient.go][36]: run cmd ==>  scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ 
+result:   string 
+[2025/02/24 16:37:37 main.go][67]: upload end 
+[2025/02/24 16:39:19 main.go][60]: runmode - test 
+[2025/02/24 16:39:19 localclient.go][36]: 
+run cmd ==> [ d: ; cd "d:/Git_Code/indicator/indicator/"; dir ]
+result:   string 
+[2025/02/24 16:39:19 localclient.go][34]: exit status 1 
+[2025/02/24 16:39:19 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:39:19 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:39:20 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/02/24 16:39:20 main.go][67]: upload end 
+[2025/02/24 16:40:07 main.go][60]: runmode - test 
+[2025/02/24 16:40:07 localclient.go][36]: 
+run cmd ==> [ d: ; cd "d:/Git_Code/indicator/indicator/"; pwd ]
+result:   string 
+[2025/02/24 16:40:07 localclient.go][34]: exit status 1 
+[2025/02/24 16:40:07 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:40:07 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:40:07 localclient.go][34]: exit status 255 
+[2025/02/24 16:40:07 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  scp: stat local "D:/Git_Code/indicator/indicator/indicator": No such file or directory
+ string 
+[2025/02/24 16:40:07 main.go][67]: upload end 
+[2025/02/24 16:42:03 main.go][60]: runmode - test 
+[2025/02/24 16:42:03 localclient.go][34]: exit status 255 
+[2025/02/24 16:42:03 localclient.go][36]: 
+run cmd ==> [ d: ; cd "d:/Git_Code/indicator/indicator/"; pwd | findstr "" ]
+result:  'd:' ²»ÊÇÄÚ²¿»òÍâ²¿ÃüÁî£¬Ò²²»ÊÇ¿ÉÔËÐÐµÄ³ÌÐò
+»òÅú´¦ÀíÎÄ¼þ¡£
+ string 
+[2025/02/24 16:42:03 localclient.go][34]: exit status 1 
+[2025/02/24 16:42:03 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:42:03 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:42:03 localclient.go][34]: exit status 255 
+[2025/02/24 16:42:03 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  scp: stat local "D:/Git_Code/indicator/indicator/indicator": No such file or directory
+ string 
+[2025/02/24 16:42:03 main.go][67]: upload end 
+[2025/02/24 16:42:43 main.go][60]: runmode - test 
+[2025/02/24 16:42:43 localclient.go][36]: 
+run cmd ==> [ d: ; cd d:/Git_Code/indicator/indicator/ ]
+result:   string 
+[2025/02/24 16:42:43 localclient.go][34]: exit status 1 
+[2025/02/24 16:42:43 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:42:43 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:42:43 localclient.go][34]: exit status 255 
+[2025/02/24 16:42:43 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  scp: stat local "D:/Git_Code/indicator/indicator/indicator": No such file or directory
+ string 
+[2025/02/24 16:42:43 main.go][67]: upload end 
+[2025/02/24 16:44:38 main.go][60]: runmode - test 
+[2025/02/24 16:44:38 localclient.go][36]: 
+run cmd ==> [ d: ; cd d:/Git_Code/indicator/indicator/ ]
+result:  [] []uint8 
+[2025/02/24 16:44:38 localclient.go][34]: exit status 1 
+[2025/02/24 16:44:38 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  [206 196 188 254 195 251 161 162 196 191 194 188 195 251 187 242 190 237 177 234 211 239 183 168 178 187 213 253 200 183 161 163 13 10] []uint8 
+[2025/02/24 16:44:38 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:44:38 localclient.go][34]: exit status 255 
+[2025/02/24 16:44:38 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  [115 99 112 58 32 115 116 97 116 32 108 111 99 97 108 32 34 68 58 47 71 105 116 95 67 111 100 101 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 34 58 32 78 111 32 115 117 99 104 32 102 105 108 101 32 111 114 32 100 105 114 101 99 116 111 114 121 13 10] []uint8 
+[2025/02/24 16:44:38 main.go][67]: upload end 
+[2025/02/24 16:46:54 main.go][60]: runmode - test 
+[2025/02/24 16:46:54 localclient.go][37]: 
+run cmd ==> [ d: ; cd d:/Git_Code/indicator/indicator/" ]
+result:  [] []uint8 
+[2025/02/24 16:46:54 localclient.go][35]: exit status 1 
+[2025/02/24 16:46:54 localclient.go][37]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  [206 196 188 254 195 251 161 162 196 191 194 188 195 251 187 242 190 237 177 234 211 239 183 168 178 187 213 253 200 183 161 163 13 10] []uint8 
+[2025/02/24 16:46:54 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:46:54 localclient.go][35]: exit status 255 
+[2025/02/24 16:46:54 localclient.go][37]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  [115 99 112 58 32 115 116 97 116 32 108 111 99 97 108 32 34 68 58 47 71 105 116 95 67 111 100 101 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 34 58 32 78 111 32 115 117 99 104 32 102 105 108 101 32 111 114 32 100 105 114 101 99 116 111 114 121 13 10] []uint8 
+[2025/02/24 16:46:54 main.go][67]: upload end 
+[2025/02/24 16:47:36 main.go][60]: runmode - test 
+[2025/02/24 16:47:36 localclient.go][37]: 
+run cmd ==> [ d: ; cd d:/Git_Code/indicator/indicator/" ]
+result:  [] []uint8 
+[2025/02/24 16:47:36 localclient.go][35]: exit status 1 
+[2025/02/24 16:47:36 localclient.go][37]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  [206 196 188 254 195 251 161 162 196 191 194 188 195 251 187 242 190 237 177 234 211 239 183 168 178 187 213 253 200 183 161 163 13 10] []uint8 
+[2025/02/24 16:47:36 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:47:36 localclient.go][35]: exit status 255 
+[2025/02/24 16:47:36 localclient.go][37]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  [115 99 112 58 32 115 116 97 116 32 108 111 99 97 108 32 34 68 58 47 71 105 116 95 67 111 100 101 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 34 58 32 78 111 32 115 117 99 104 32 102 105 108 101 32 111 114 32 100 105 114 101 99 116 111 114 121 13 10] []uint8 
+[2025/02/24 16:47:36 main.go][67]: upload end 
+[2025/02/24 16:50:16 main.go][60]: runmode - test 
+[2025/02/24 16:50:16 localclient.go][37]: 
+run cmd ==> [ d: ; cd d:/Git_Code/indicator/indicator/ ]
+result:  [] []uint8 
+[2025/02/24 16:50:16 localclient.go][35]: exit status 1 
+[2025/02/24 16:50:16 localclient.go][37]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  [206 196 188 254 195 251 161 162 196 191 194 188 195 251 187 242 190 237 177 234 211 239 183 168 178 187 213 253 200 183 161 163 13 10] []uint8 
+[2025/02/24 16:50:16 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:50:16 localclient.go][35]: exit status 255 
+[2025/02/24 16:50:16 localclient.go][37]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  [115 99 112 58 32 115 116 97 116 32 108 111 99 97 108 32 34 68 58 47 71 105 116 95 67 111 100 101 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 34 58 32 78 111 32 115 117 99 104 32 102 105 108 101 32 111 114 32 100 105 114 101 99 116 111 114 121 13 10] []uint8 
+[2025/02/24 16:50:16 main.go][67]: upload end 
+[2025/02/24 16:51:26 main.go][60]: runmode - test 
+[2025/02/24 16:51:26 localclient.go][37]: 
+run cmd ==> [ d: ; cd d:/Git_Code/indicator/indicator/; pwd ]
+result:  [] []uint8 
+[2025/02/24 16:51:26 localclient.go][35]: exit status 1 
+[2025/02/24 16:51:26 localclient.go][37]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  [206 196 188 254 195 251 161 162 196 191 194 188 195 251 187 242 190 237 177 234 211 239 183 168 178 187 213 253 200 183 161 163 13 10] []uint8 
+[2025/02/24 16:51:26 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:51:26 localclient.go][35]: exit status 255 
+[2025/02/24 16:51:26 localclient.go][37]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  [115 99 112 58 32 115 116 97 116 32 108 111 99 97 108 32 34 68 58 47 71 105 116 95 67 111 100 101 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 34 58 32 78 111 32 115 117 99 104 32 102 105 108 101 32 111 114 32 100 105 114 101 99 116 111 114 121 13 10] []uint8 
+[2025/02/24 16:51:26 main.go][67]: upload end 
+[2025/02/24 16:54:54 main.go][60]: runmode - test 
+[2025/02/24 16:54:54 localclient.go][36]: 
+run cmd ==> [ echo 1 ; echo 2 ]
+result:  [49 32 59 32 101 99 104 111 32 50 13 10] []uint8 
+[2025/02/24 16:54:54 localclient.go][36]: 
+run cmd ==> [ d: ; pwd; cd d:/Git_Code/indicator/indicator/; pwd ]
+result:  [] []uint8 
+[2025/02/24 16:54:54 localclient.go][34]: exit status 1 
+[2025/02/24 16:54:54 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  [206 196 188 254 195 251 161 162 196 191 194 188 195 251 187 242 190 237 177 234 211 239 183 168 178 187 213 253 200 183 161 163 13 10] []uint8 
+[2025/02/24 16:54:54 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:54:54 localclient.go][34]: exit status 255 
+[2025/02/24 16:54:54 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  [115 99 112 58 32 115 116 97 116 32 108 111 99 97 108 32 34 68 58 47 71 105 116 95 67 111 100 101 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 47 105 110 100 105 99 97 116 111 114 34 58 32 78 111 32 115 117 99 104 32 102 105 108 101 32 111 114 32 100 105 114 101 99 116 111 114 121 13 10] []uint8 
+[2025/02/24 16:54:54 main.go][68]: upload end 
+[2025/02/24 16:55:46 main.go][60]: runmode - test 
+[2025/02/24 16:55:46 localclient.go][36]: 
+run cmd ==> [ echo 1 ; echo 2 ]
+result:  1 ; echo 2
+ string 
+[2025/02/24 16:55:46 localclient.go][36]: 
+run cmd ==> [ d: ; pwd; cd d:/Git_Code/indicator/indicator/; pwd ]
+result:   string 
+[2025/02/24 16:55:46 localclient.go][34]: exit status 1 
+[2025/02/24 16:55:46 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:55:46 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:55:46 localclient.go][34]: exit status 255 
+[2025/02/24 16:55:46 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  scp: stat local "D:/Git_Code/indicator/indicator/indicator": No such file or directory
+ string 
+[2025/02/24 16:55:46 main.go][68]: upload end 
+[2025/02/24 16:56:29 main.go][60]: runmode - test 
+[2025/02/24 16:56:29 localclient.go][34]: exit status 1 
+[2025/02/24 16:56:29 localclient.go][36]: 
+run cmd ==> [ (0echo 1 ); (echo 2) ]
+result:  ´ËÊ±²»Ó¦ÓÐ (echo¡£
+ string 
+[2025/02/24 16:56:29 localclient.go][36]: 
+run cmd ==> [ d: ; pwd; cd d:/Git_Code/indicator/indicator/; pwd ]
+result:   string 
+[2025/02/24 16:56:29 localclient.go][34]: exit status 1 
+[2025/02/24 16:56:29 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:56:29 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:56:29 localclient.go][34]: exit status 255 
+[2025/02/24 16:56:29 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  scp: stat local "D:/Git_Code/indicator/indicator/indicator": No such file or directory
+ string 
+[2025/02/24 16:56:29 main.go][68]: upload end 
+[2025/02/24 16:56:43 main.go][60]: runmode - test 
+[2025/02/24 16:56:43 localclient.go][34]: exit status 1 
+[2025/02/24 16:56:43 localclient.go][36]: 
+run cmd ==> [ (echo 1 ); (echo 2) ]
+result:  ´ËÊ±²»Ó¦ÓÐ (echo¡£
+ string 
+[2025/02/24 16:56:43 localclient.go][36]: 
+run cmd ==> [ d: ; pwd; cd d:/Git_Code/indicator/indicator/; pwd ]
+result:   string 
+[2025/02/24 16:56:43 localclient.go][34]: exit status 1 
+[2025/02/24 16:56:43 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:56:43 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:56:43 localclient.go][34]: exit status 255 
+[2025/02/24 16:56:43 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  scp: stat local "D:/Git_Code/indicator/indicator/indicator": No such file or directory
+ string 
+[2025/02/24 16:56:43 main.go][68]: upload end 
+[2025/02/24 16:57:04 main.go][60]: runmode - test 
+[2025/02/24 16:57:04 localclient.go][36]: 
+run cmd ==> [ echo 1 ; echo 2 ]
+result:  1 ; echo 2
+ string 
+[2025/02/24 16:57:04 localclient.go][36]: 
+run cmd ==> [ d: ; pwd; cd d:/Git_Code/indicator/indicator/; pwd ]
+result:   string 
+[2025/02/24 16:57:04 localclient.go][34]: exit status 1 
+[2025/02/24 16:57:04 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:57:04 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:57:04 localclient.go][34]: exit status 255 
+[2025/02/24 16:57:04 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  scp: stat local "D:/Git_Code/indicator/indicator/indicator": No such file or directory
+ string 
+[2025/02/24 16:57:04 main.go][68]: upload end 
+[2025/02/24 16:57:48 main.go][60]: runmode - test 
+[2025/02/24 16:57:48 localclient.go][36]: 
+run cmd ==> [ echo 1 ï¼› echo 2 ]
+result:  1 £» echo 2
+ string 
+[2025/02/24 16:57:48 localclient.go][36]: 
+run cmd ==> [ d: ; pwd; cd d:/Git_Code/indicator/indicator/; pwd ]
+result:   string 
+[2025/02/24 16:57:48 localclient.go][34]: exit status 1 
+[2025/02/24 16:57:48 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:57:48 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:57:48 localclient.go][34]: exit status 255 
+[2025/02/24 16:57:48 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  scp: stat local "D:/Git_Code/indicator/indicator/indicator": No such file or directory
+ string 
+[2025/02/24 16:57:48 main.go][68]: upload end 
+[2025/02/24 16:58:29 main.go][60]: runmode - test 
+[2025/02/24 16:58:29 localclient.go][36]: 
+run cmd ==> [ echo 1 & echo 2 ]
+result:  1 
+2
+ string 
+[2025/02/24 16:58:29 localclient.go][36]: 
+run cmd ==> [ d: ; pwd; cd d:/Git_Code/indicator/indicator/; pwd ]
+result:   string 
+[2025/02/24 16:58:29 localclient.go][34]: exit status 1 
+[2025/02/24 16:58:29 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" ; go build -o indicator ./main.go ; $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:58:29 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:58:29 localclient.go][34]: exit status 255 
+[2025/02/24 16:58:29 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:  scp: stat local "D:/Git_Code/indicator/indicator/indicator": No such file or directory
+ string 
+[2025/02/24 16:58:29 main.go][68]: upload end 
+[2025/02/24 16:58:55 main.go][60]: runmode - test 
+[2025/02/24 16:58:56 localclient.go][36]: 
+run cmd ==> [ echo 1 & echo 2 ]
+result:  1 
+2
+ string 
+[2025/02/24 16:58:56 localclient.go][34]: exit status 1 
+[2025/02/24 16:58:56 localclient.go][36]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/; pwd ]
+result:  ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£
+ string 
+[2025/02/24 16:58:59 localclient.go][34]: exit status 1 
+[2025/02/24 16:58:59 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" & go build -o indicator ./main.go & $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:58:59 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:58:59 localclient.go][34]: context deadline exceeded 
+[2025/02/24 16:58:59 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/02/24 16:58:59 main.go][68]: upload end 
+[2025/02/24 16:59:27 main.go][60]: runmode - test 
+[2025/02/24 16:59:27 localclient.go][36]: 
+run cmd ==> [ echo 1 & echo 2 ]
+result:  1 
+2
+ string 
+[2025/02/24 16:59:27 localclient.go][34]: exit status 1 
+[2025/02/24 16:59:27 localclient.go][36]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & pwd ]
+result:  'pwd' ²»ÊÇÄÚ²¿»òÍâ²¿ÃüÁî£¬Ò²²»ÊÇ¿ÉÔËÐÐµÄ³ÌÐò
+»òÅú´¦ÀíÎÄ¼þ¡£
+ string 
+[2025/02/24 16:59:31 localclient.go][34]: exit status 1 
+[2025/02/24 16:59:31 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" & go build -o indicator ./main.go & $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 16:59:31 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 16:59:31 localclient.go][34]: context deadline exceeded 
+[2025/02/24 16:59:31 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/02/24 16:59:31 main.go][68]: upload end 
+[2025/02/24 16:59:51 main.go][60]: runmode - test 
+[2025/02/24 16:59:51 localclient.go][36]: 
+run cmd ==> [ echo 1 & echo 2 ]
+result:  1 
+2
+ string 
+[2025/02/24 16:59:51 localclient.go][36]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   Çý¶¯Æ÷ D ÖÐµÄ¾íÊÇ ÐÂ¼Ó¾í
+ ¾íµÄÐòÁÐºÅÊÇ 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator µÄÄ¿Â¼
+
+2025/02/25  00:59    <DIR>          .
+2025/02/25  00:11    <DIR>          ..
+2025/02/15  15:59    <DIR>          .trunk
+2025/02/15  15:21    <DIR>          api
+2025/02/19  01:38    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/02/17  22:43                28 go.mod
+2025/02/25  00:59         2,879,488 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/24  22:38         2,877,440 main.exe
+2025/02/25  00:59             2,452 main.go
+2025/02/17  22:34    <DIR>          output
+2025/02/25  00:59            48,618 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               6 ¸öÎÄ¼þ      5,809,368 ×Ö½Ú
+              14 ¸öÄ¿Â¼ 40,023,662,592 ¿ÉÓÃ×Ö½Ú
+ string 
+[2025/02/24 17:00:35 localclient.go][34]: exit status 1 
+[2025/02/24 17:00:35 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" & go build -o indicator ./main.go & $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 17:00:35 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 17:00:35 localclient.go][34]: context deadline exceeded 
+[2025/02/24 17:00:35 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/02/24 17:00:35 main.go][68]: upload end 
+[2025/02/24 17:00:39 main.go][60]: runmode - test 
+[2025/02/24 17:00:39 localclient.go][36]: 
+run cmd ==> [ echo 1 & echo 2 ]
+result:  1 
+2
+ string 
+[2025/02/24 17:00:39 localclient.go][36]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   Çý¶¯Æ÷ D ÖÐµÄ¾íÊÇ ÐÂ¼Ó¾í
+ ¾íµÄÐòÁÐºÅÊÇ 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator µÄÄ¿Â¼
+
+2025/02/25  01:00    <DIR>          .
+2025/02/25  00:11    <DIR>          ..
+2025/02/15  15:59    <DIR>          .trunk
+2025/02/15  15:21    <DIR>          api
+2025/02/19  01:38    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/02/17  22:43                28 go.mod
+2025/02/25  01:00         2,879,488 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/24  22:38         2,877,440 main.exe
+2025/02/25  00:59             2,452 main.go
+2025/02/17  22:34    <DIR>          output
+2025/02/25  01:00            50,592 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               6 ¸öÎÄ¼þ      5,811,342 ×Ö½Ú
+              14 ¸öÄ¿Â¼ 40,023,658,496 ¿ÉÓÃ×Ö½Ú
+ string 
+[2025/02/24 17:00:41 localclient.go][34]: exit status 1 
+[2025/02/24 17:00:41 localclient.go][36]: 
+run cmd ==> [ $env:GOOS="linux" & go build -o indicator ./main.go & $env:GOOS="windows" ]
+result:  ÎÄ¼þÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕýÈ·¡£
+ string 
+[2025/02/24 17:00:41 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 17:00:41 localclient.go][34]: context deadline exceeded 
+[2025/02/24 17:00:41 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/02/24 17:00:41 main.go][68]: upload end 
+[2025/02/24 17:02:04 main.go][60]: runmode - test 
+[2025/02/24 17:02:04 localclient.go][36]: 
+run cmd ==> [ echo 1 & echo 2 ]
+result:  1 
+2
+ string 
+[2025/02/24 17:02:04 localclient.go][36]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   Çý¶¯Æ÷ D ÖÐµÄ¾íÊÇ ÐÂ¼Ó¾í
+ ¾íµÄÐòÁÐºÅÊÇ 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator µÄÄ¿Â¼
+
+2025/02/25  01:00    <DIR>          .
+2025/02/25  00:11    <DIR>          ..
+2025/02/15  15:59    <DIR>          .trunk
+2025/02/15  15:21    <DIR>          api
+2025/02/19  01:38    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/02/17  22:43                28 go.mod
+2025/02/25  01:00         2,879,488 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/24  22:38         2,877,440 main.exe
+2025/02/25  01:01             2,446 main.go
+2025/02/17  22:34    <DIR>          output
+2025/02/25  01:00            52,566 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               6 ¸öÎÄ¼þ      5,813,310 ×Ö½Ú
+              14 ¸öÄ¿Â¼ 40,023,658,496 ¿ÉÓÃ×Ö½Ú
+ string 
+[2025/02/24 17:02:05 localclient.go][36]: 
+run cmd ==> [ set GOOS=linux & go build -o indicator ./main.go & set GOOS=windows ]
+result:  go: unsupported GOOS/GOARCH pair linux /amd64
+ string 
+[2025/02/24 17:02:05 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 17:02:05 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/02/24 17:02:05 main.go][68]: upload end 
+[2025/02/24 17:02:59 main.go][60]: runmode - test 
+[2025/02/24 17:02:59 localclient.go][36]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   Çý¶¯Æ÷ D ÖÐµÄ¾íÊÇ ÐÂ¼Ó¾í
+ ¾íµÄÐòÁÐºÅÊÇ 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator µÄÄ¿Â¼
+
+2025/02/25  01:00    <DIR>          .
+2025/02/25  00:11    <DIR>          ..
+2025/02/15  15:59    <DIR>          .trunk
+2025/02/15  15:21    <DIR>          api
+2025/02/19  01:38    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/02/17  22:43                28 go.mod
+2025/02/25  01:00         2,879,488 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/24  22:38         2,877,440 main.exe
+2025/02/25  01:02             2,405 main.go
+2025/02/17  22:34    <DIR>          output
+2025/02/25  01:02            54,420 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               6 ¸öÎÄ¼þ      5,815,123 ×Ö½Ú
+              14 ¸öÄ¿Â¼ 40,023,654,400 ¿ÉÓÃ×Ö½Ú
+ string 
+[2025/02/24 17:03:03 localclient.go][34]: exit status 1 
+[2025/02/24 17:03:03 localclient.go][36]: 
+run cmd ==> [ set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows ]
+result:   string 
+[2025/02/24 17:03:03 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 17:03:03 localclient.go][34]: context deadline exceeded 
+[2025/02/24 17:03:03 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/02/24 17:03:03 main.go][67]: upload end 
+[2025/02/24 17:04:21 main.go][60]: runmode - test 
+[2025/02/24 17:04:21 localclient.go][36]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   Çý¶¯Æ÷ D ÖÐµÄ¾íÊÇ ÐÂ¼Ó¾í
+ ¾íµÄÐòÁÐºÅÊÇ 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator µÄÄ¿Â¼
+
+2025/02/25  01:03    <DIR>          .
+2025/02/25  00:11    <DIR>          ..
+2025/02/15  15:59    <DIR>          .trunk
+2025/02/15  15:21    <DIR>          api
+2025/02/19  01:38    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/02/17  22:43                28 go.mod
+2025/02/25  01:03         2,745,824 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/24  22:38         2,877,440 main.exe
+2025/02/25  01:02             2,405 main.go
+2025/02/17  22:34    <DIR>          output
+2025/02/25  01:03            56,253 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               6 ¸öÎÄ¼þ      5,683,292 ×Ö½Ú
+              14 ¸öÄ¿Â¼ 40,023,785,472 ¿ÉÓÃ×Ö½Ú
+ string 
+[2025/02/24 17:04:24 localclient.go][36]: 
+run cmd ==> [ set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows ]
+result:   string 
+[2025/02/24 17:04:24 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 17:04:25 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/02/24 17:04:25 main.go][67]: upload end 
+[2025/02/24 17:04:51 main.go][60]: runmode - test 
+[2025/02/24 17:04:51 localclient.go][36]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   Çý¶¯Æ÷ D ÖÐµÄ¾íÊÇ ÐÂ¼Ó¾í
+ ¾íµÄÐòÁÐºÅÊÇ 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator µÄÄ¿Â¼
+
+2025/02/25  01:04    <DIR>          .
+2025/02/25  00:11    <DIR>          ..
+2025/02/15  15:59    <DIR>          .trunk
+2025/02/15  15:21    <DIR>          api
+2025/02/19  01:38    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/02/17  22:43                28 go.mod
+2025/02/25  01:04         2,745,800 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/24  22:38         2,877,440 main.exe
+2025/02/25  01:04             2,405 main.go
+2025/02/17  22:34    <DIR>          output
+2025/02/25  01:04            57,960 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               6 ¸öÎÄ¼þ      5,684,975 ×Ö½Ú
+              14 ¸öÄ¿Â¼ 40,023,781,376 ¿ÉÓÃ×Ö½Ú
+ string 
+[2025/02/24 17:04:53 localclient.go][36]: 
+run cmd ==> [ set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows ]
+result:   string 
+[2025/02/24 17:04:53 main.go][65]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 17:04:53 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/02/24 17:04:53 main.go][67]: upload end 
+[2025/02/24 17:12:56 main.go][62]: runmode - test 
+[2025/02/24 17:12:56 localclient.go][36]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   Çý¶¯Æ÷ D ÖÐµÄ¾íÊÇ ÐÂ¼Ó¾í
+ ¾íµÄÐòÁÐºÅÊÇ 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator µÄÄ¿Â¼
+
+2025/02/25  01:04    <DIR>          .
+2025/02/25  00:11    <DIR>          ..
+2025/02/15  15:59    <DIR>          .trunk
+2025/02/15  15:21    <DIR>          api
+2025/02/25  01:09    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/02/17  22:43                28 go.mod
+2025/02/25  01:04         2,745,800 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/24  22:38         2,877,440 main.exe
+2025/02/25  01:12             2,454 main.go
+2025/02/17  22:34    <DIR>          output
+2025/02/25  01:04            59,667 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               6 ¸öÎÄ¼þ      5,686,731 ×Ö½Ú
+              14 ¸öÄ¿Â¼ 40,023,781,376 ¿ÉÓÃ×Ö½Ú
+ string 
+[2025/02/24 17:12:59 localclient.go][36]: 
+run cmd ==> [ set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows ]
+result:   string 
+[2025/02/24 17:12:59 main.go][67]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 17:13:00 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/02/24 17:13:00 main.go][69]: upload end 
+[2025/02/24 17:13:51 main.go][61]: runmode - test 
+[2025/02/24 17:13:51 localclient.go][36]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   Çý¶¯Æ÷ D ÖÐµÄ¾íÊÇ ÐÂ¼Ó¾í
+ ¾íµÄÐòÁÐºÅÊÇ 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator µÄÄ¿Â¼
+
+2025/02/25  01:12    <DIR>          .
+2025/02/25  00:11    <DIR>          ..
+2025/02/15  15:59    <DIR>          .trunk
+2025/02/15  15:21    <DIR>          api
+2025/02/25  01:09    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/02/17  22:43                28 go.mod
+2025/02/25  01:12         2,746,078 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/24  22:38         2,877,440 main.exe
+2025/02/25  01:13             2,394 main.go
+2025/02/17  22:34    <DIR>          output
+2025/02/25  01:13            61,374 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               6 ¸öÎÄ¼þ      5,688,656 ×Ö½Ú
+              14 ¸öÄ¿Â¼ 40,023,781,376 ¿ÉÓÃ×Ö½Ú
+ string 
+[2025/02/24 17:13:54 localclient.go][36]: 
+run cmd ==> [ set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows ]
+result:   string 
+[2025/02/24 17:13:54 main.go][66]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/02/24 17:13:54 localclient.go][36]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/02/24 17:13:54 main.go][68]: upload end 

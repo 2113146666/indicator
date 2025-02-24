@@ -1,12 +1,13 @@
 package main
 
 import (
-	"context"
 	"flag"
+	"fmt"
+	"indicator/cmd/collect"
 	"indicator/cmd/localclient"
 	"indicator/cmd/logger"
+	"reflect"
 	"strings"
-	"time"
 )
 
 type MONITOR struct {
@@ -40,6 +41,7 @@ func init() {
 
 func run_client_mode() {
 	logger.LogConsole("runmode - client")
+
 }
 
 func run_controller_mode() {
@@ -48,20 +50,25 @@ func run_controller_mode() {
 
 func run_agent_mode() {
 	logger.LogConsole("runmode - agent")
+	collect.GetCPUInfo()
 }
 
 func run_update_mode() {
 	logger.LogConsole("runmode - update")
 }
 
-func run_test_mode() {
+func run_test_mode(remote_host string, remote_port int) {
 	logger.LogConsole("runmode - test")
+	localclient.RunCMD("d: & cd d:/Git_Code/indicator/indicator/ & dir")
+	localclient.RunCMD("set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows")
+	// localclient.RunCMD(string(fmt.Sprintf(`scp -P %v "D:\Git_Code\indicator\indicator\indicator" root@%v:/root/`, remote_port, remote_host)))
+	upload_cmd := fmt.Sprintf("scp -P %v D:/Git_Code/indicator/indicator/indicator root@%v:/root/", remote_port, remote_host)
+	logger.LogConsole(upload_cmd, reflect.TypeOf(upload_cmd))
+	localclient.RunCMD(upload_cmd)
+	logger.LogConsole("upload end")
 }
 
 func main() {
-	ctx, _ := context.WithTimeout(context.Background(), 2*time.Second)
-	std, err := localclient.RunCMD(ctx, "dir")
-	logger.LogConsole(std, err)
 
 	switch GLOBAL_VAR.runmode {
 	case "client":
@@ -73,7 +80,8 @@ func main() {
 	case "update":
 		run_update_mode()
 	case "test":
-		run_test_mode()
+		// 目前作为upload使用
+		run_test_mode("106.15.6.164", 22)
 	}
-	logger.LogConsole(GLOBAL_VAR)
+	// logger.LogConsole(GLOBAL_VAR)
 }

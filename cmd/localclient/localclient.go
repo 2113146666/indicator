@@ -2,12 +2,17 @@ package localclient
 
 import (
 	"context"
+	"indicator/cmd/logger"
 	"os/exec"
+	"reflect"
 	"runtime"
+	"time"
 )
 
+var ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+
 // 每次下发重新打开需启动shell, 性能差
-func RunCMD(ctx context.Context, command string) (string, error) {
+func runCmd(ctx context.Context, command string) (string, error) {
 	var cmd *exec.Cmd
 
 	// 兼容windows
@@ -16,14 +21,22 @@ func RunCMD(ctx context.Context, command string) (string, error) {
 		cmd = exec.CommandContext(ctx, "cmd.exe", "/C", command)
 	default:
 		cmd = exec.CommandContext(ctx, "sh", "-c", command)
-	}
+	}	
 
 	output, err := cmd.CombinedOutput()
-	if err != nil {
-		return "", err
-	}
 
 	return string(output), err
+}
+
+func RunCMD(command string) string {
+	res, err := runCmd(ctx, command)
+	if err != nil {
+		logger.LogConsole(err)
+	}
+	logger.LogConsole("\nrun cmd ==> [", command, "]\nresult: ", res, reflect.TypeOf(res))
+	// fmt.Printf("\n[string]%#v\n", string(res))
+
+	return res
 }
 
 // // shell长连接方案
