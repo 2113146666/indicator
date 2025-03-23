@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-var ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+var cmdTimeout = 60 * time.Second
 
 // 每次下发重新打开需启动shell, 性能差
 func runCmd(ctx context.Context, command string) (string, error) {
@@ -21,7 +21,7 @@ func runCmd(ctx context.Context, command string) (string, error) {
 		cmd = exec.CommandContext(ctx, "cmd.exe", "/C", command)
 	default:
 		cmd = exec.CommandContext(ctx, "sh", "-c", command)
-	}	
+	}
 
 	output, err := cmd.CombinedOutput()
 
@@ -29,6 +29,9 @@ func runCmd(ctx context.Context, command string) (string, error) {
 }
 
 func RunCMD(command string) string {
+	var ctx, cancel = context.WithTimeout(context.Background(), cmdTimeout*time.Second)
+	defer cancel()
+
 	res, err := runCmd(ctx, command)
 	if err != nil {
 		logger.LogConsole(err)

@@ -6,8 +6,13 @@ import (
 	"indicator/cmd/collect"
 	"indicator/cmd/localclient"
 	"indicator/cmd/logger"
+	"io"
+	"net/http"
 	"reflect"
+	"strconv"
 	"strings"
+	"sync"
+	"time"
 )
 
 type MONITOR struct {
@@ -15,13 +20,16 @@ type MONITOR struct {
 	logconsole       string
 	logfilelevel     string
 	runmode          string
-	runtotaltime     string
+	runtotaltime     int
 	needmonitorpname []string
 	severtype        string
-	monitorinterval  string
+	monitorinterval  int
 }
 
-var GLOBAL_VAR MONITOR
+var (
+	GLOBAL_VAR MONITOR
+	lock       sync.Mutex
+)
 
 func init() {
 	var pnameList string = ""
@@ -29,28 +37,58 @@ func init() {
 	flag.StringVar(&GLOBAL_VAR.logconsole, "logconsole", "warning", "")
 	flag.StringVar(&GLOBAL_VAR.logfilelevel, "logfilelevel", "info", "")
 	flag.StringVar(&GLOBAL_VAR.runmode, "runmode", "agent", "")
-	flag.StringVar(&GLOBAL_VAR.runtotaltime, "runtotaltime", "31536000", "")
+	flag.IntVar(&GLOBAL_VAR.runtotaltime, "runtotaltime", 31536000, "")
 	flag.StringVar(&pnameList, "needmonitorpname", "", "")
 	flag.StringVar(&GLOBAL_VAR.severtype, "severtype", "", "")
-	flag.StringVar(&GLOBAL_VAR.monitorinterval, "monitorinterval", "", "")
+	flag.IntVar(&GLOBAL_VAR.monitorinterval, "monitorinterval", 15, "")
 
 	flag.Parse()
 
 	GLOBAL_VAR.needmonitorpname = strings.Split(pnameList, ",")
 }
 
+func start_http_server(port int) {
+	http.HandleFunc("/metrices", reply_data)
+	fmt.Printf("start listen on %v\n", port)
+	address := ":" + strconv.Itoa(port)
+	http.ListenAndServe(address, nil)
+}
+
+func reply_data(w http.ResponseWriter, r *http.Request) {
+	lock.Lock()
+	defer lock.Unlock()
+	var data = "111"
+	io.WriteString(w, data)
+}
+
 func run_client_mode() {
 	logger.LogConsole("runmode - client")
-
 }
 
 func run_controller_mode() {
 	logger.LogConsole("runmode - controller")
 }
 
-func run_agent_mode() {
-	logger.LogConsole("runmode - agent")
-	collect.GetCPUInfo()
+func run_prometheus_client(interval int) {
+	//1、初始化prometheus对象
+	//2、起一个服务监听对应端口
+	totalTime := time.Duration(GLOBAL_VAR.runtotaltime) * time.Second
+	intervalTime := time.Duration(interval) * time.Second
+
+	go start_http_server(9101)
+	logger.LogConsole("runmode - prometheus client")
+	ticker := time.NewTicker(intervalTime)
+	defer ticker.Stop()
+	timeout := time.After(totalTime)
+loop:
+	for {
+		select {
+		case <-ticker.C:
+			collect.GetAllDatas()
+		case <-timeout:
+			break loop
+		}
+	}
 }
 
 func run_update_mode() {
@@ -76,7 +114,7 @@ func main() {
 	case "controller":
 		run_controller_mode()
 	case "agent":
-		run_agent_mode()
+		run_prometheus_client(GLOBAL_VAR.monitorinterval)
 	case "update":
 		run_update_mode()
 	case "test":
