@@ -1341,3 +1341,223 @@ result:   string
 run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
 result:   string 
 [2025/03/09 10:48:57 main.go][106]: upload end 
+[2025/03/23 10:00:04 main.go][79]: runmode - prometheus client 
+[2025/03/23 10:00:19 localclient.go][37]: exit status 1 
+[2025/03/23 10:00:19 localclient.go][39]: 
+run cmd ==> [ cat /proc/cpuinfo ]
+result:  'cat' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+ string 
+[2025/03/23 10:00:19 collect.go][12]: 'cat' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+ 
+[2025/03/23 10:33:36 main.go][128]: runmode - test 
+[2025/03/23 10:33:36 localclient.go][39]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   驱动器 D 中的卷是 新加卷
+ 卷的序列号是 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator 的目录
+
+2025/03/23  18:00    <DIR>          .
+2025/02/25  01:32    <DIR>          ..
+2025/02/25  01:32                88 .gitignore
+2025/02/15  15:59    <DIR>          .trunk
+2025/03/23  17:59    <DIR>          .vscode
+2025/02/15  15:21    <DIR>          api
+2025/03/23  16:54    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/03/23  17:07               149 go.mod
+2025/03/23  17:07               370 go.sum
+2025/03/09  18:48         7,684,961 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/25  01:27         2,877,440 main.exe
+2025/03/23  18:33             4,226 main.go
+2025/02/17  22:34    <DIR>          output
+2025/03/23  18:00            75,005 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               8 个文件     10,643,581 字节
+              15 个目录 38,431,895,552 可用字节
+ string 
+[2025/03/23 10:34:07 localclient.go][39]: 
+run cmd ==> [ set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows ]
+result:   string 
+[2025/03/23 10:34:07 main.go][133]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/03/23 10:34:08 localclient.go][39]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/03/23 10:34:08 main.go][135]: upload end 
+[2025/03/23 10:38:07 main.go][128]: runmode - test 
+[2025/03/23 10:38:07 localclient.go][39]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   驱动器 D 中的卷是 新加卷
+ 卷的序列号是 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator 的目录
+
+2025/03/23  18:34    <DIR>          .
+2025/02/25  01:32    <DIR>          ..
+2025/02/25  01:32                88 .gitignore
+2025/02/15  15:59    <DIR>          .trunk
+2025/03/23  17:59    <DIR>          .vscode
+2025/02/15  15:21    <DIR>          api
+2025/03/23  16:54    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/03/23  17:07               149 go.mod
+2025/03/23  17:07               370 go.sum
+2025/03/23  18:34         7,702,280 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/25  01:27         2,877,440 main.exe
+2025/03/23  18:37             4,227 main.go
+2025/02/17  22:34    <DIR>          output
+2025/03/23  18:34            76,852 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               8 个文件     10,662,748 字节
+              15 个目录 38,431,879,168 可用字节
+ string 
+[2025/03/23 10:38:10 localclient.go][39]: 
+run cmd ==> [ set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows ]
+result:   string 
+[2025/03/23 10:38:10 main.go][133]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/03/23 10:38:11 localclient.go][39]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/03/23 10:38:11 main.go][135]: upload end 
+[2025/03/23 10:41:41 main.go][127]: runmode - test 
+[2025/03/23 10:41:41 localclient.go][39]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   驱动器 D 中的卷是 新加卷
+ 卷的序列号是 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator 的目录
+
+2025/03/23  18:38    <DIR>          .
+2025/02/25  01:32    <DIR>          ..
+2025/02/25  01:32                88 .gitignore
+2025/02/15  15:59    <DIR>          .trunk
+2025/03/23  17:59    <DIR>          .vscode
+2025/02/15  15:21    <DIR>          api
+2025/03/23  16:54    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/03/23  17:07               149 go.mod
+2025/03/23  17:07               370 go.sum
+2025/03/23  18:38         7,702,280 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/25  01:27         2,877,440 main.exe
+2025/03/23  18:41             4,246 main.go
+2025/02/17  22:34    <DIR>          output
+2025/03/23  18:38            78,699 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               8 个文件     10,664,614 字节
+              15 个目录 38,431,875,072 可用字节
+ string 
+[2025/03/23 10:41:44 localclient.go][39]: 
+run cmd ==> [ set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows ]
+result:   string 
+[2025/03/23 10:41:44 main.go][132]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/03/23 10:41:45 localclient.go][39]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/03/23 10:41:45 main.go][134]: upload end 
+[2025/03/23 17:17:22 main.go][145]: runmode - test 
+[2025/03/23 17:17:22 localclient.go][39]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   驱动器 D 中的卷是 新加卷
+ 卷的序列号是 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator 的目录
+
+2025/03/23  18:41    <DIR>          .
+2025/02/25  01:32    <DIR>          ..
+2025/02/25  01:32                88 .gitignore
+2025/02/15  15:59    <DIR>          .trunk
+2025/03/23  17:59    <DIR>          .vscode
+2025/02/15  15:21    <DIR>          api
+2025/03/23  16:54    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/03/23  17:07               149 go.mod
+2025/03/23  17:07               370 go.sum
+2025/03/23  18:41         7,708,075 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/25  01:27         2,877,440 main.exe
+2025/03/24  01:17             4,430 main.go
+2025/02/17  22:34    <DIR>          output
+2025/03/23  18:41            80,546 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               8 个文件     10,672,440 字节
+              15 个目录 38,444,044,288 可用字节
+ string 
+[2025/03/23 17:17:27 localclient.go][39]: 
+run cmd ==> [ set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows ]
+result:   string 
+[2025/03/23 17:17:27 main.go][150]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/03/23 17:17:28 localclient.go][39]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/03/23 17:17:28 main.go][152]: upload end 
+[2025/03/23 17:19:58 main.go][145]: runmode - test 
+[2025/03/23 17:19:58 localclient.go][39]: 
+run cmd ==> [ d: & cd d:/Git_Code/indicator/indicator/ & dir ]
+result:   驱动器 D 中的卷是 新加卷
+ 卷的序列号是 5C56-ECE7
+
+ d:\Git_Code\indicator\indicator 的目录
+
+2025/03/24  01:17    <DIR>          .
+2025/02/25  01:32    <DIR>          ..
+2025/02/25  01:32                88 .gitignore
+2025/02/15  15:59    <DIR>          .trunk
+2025/03/23  17:59    <DIR>          .vscode
+2025/02/15  15:21    <DIR>          api
+2025/03/23  16:54    <DIR>          cmd
+2025/02/15  15:08    <DIR>          configs
+2025/03/23  17:07               149 go.mod
+2025/03/23  17:07               370 go.sum
+2025/03/24  01:17         7,692,527 indicator
+2025/02/15  15:08    <DIR>          internal
+2025/02/25  01:27         2,877,440 main.exe
+2025/03/24  01:19             4,430 main.go
+2025/02/17  22:34    <DIR>          output
+2025/03/24  01:17            82,393 output.log
+2025/02/15  15:08    <DIR>          pkg
+2025/02/15  15:48             1,342 README.md
+2025/02/15  15:08    <DIR>          scripts
+2025/02/15  15:08    <DIR>          study
+2025/02/15  15:08    <DIR>          testdata
+2025/02/15  15:08    <DIR>          tests
+2025/02/15  15:22    <DIR>          web
+               8 个文件     10,658,739 字节
+              15 个目录 38,444,052,480 可用字节
+ string 
+[2025/03/23 17:20:02 localclient.go][39]: 
+run cmd ==> [ set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows ]
+result:   string 
+[2025/03/23 17:20:02 main.go][150]: scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ string 
+[2025/03/23 17:20:03 localclient.go][39]: 
+run cmd ==> [ scp -P 22 D:/Git_Code/indicator/indicator/indicator root@106.15.6.164:/root/ ]
+result:   string 
+[2025/03/23 17:20:03 main.go][152]: upload end 

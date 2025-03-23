@@ -6,7 +6,6 @@ import (
 	"indicator/cmd/collect"
 	"indicator/cmd/localclient"
 	"indicator/cmd/logger"
-	"io"
 	"net/http"
 	"reflect"
 	"strconv"
@@ -27,8 +26,9 @@ type MONITOR struct {
 }
 
 var (
-	GLOBAL_VAR MONITOR
-	lock       sync.Mutex
+	GLOBAL_VAR  MONITOR
+	lock        sync.Mutex
+	listen_fail bool
 )
 
 func init() {
@@ -48,17 +48,29 @@ func init() {
 }
 
 func start_http_server(port int) {
-	http.HandleFunc("/metrices", reply_data)
-	fmt.Printf("start listen on %v\n", port)
-	address := ":" + strconv.Itoa(port)
-	http.ListenAndServe(address, nil)
-}
 
-func reply_data(w http.ResponseWriter, r *http.Request) {
-	lock.Lock()
-	defer lock.Unlock()
-	var data = "111"
-	io.WriteString(w, data)
+	maxRetry := 99
+	address := ":" + strconv.Itoa(port)
+
+	http.HandleFunc("/metrics", metricsHandler)
+
+loop:
+	for i := maxRetry; i > 0; i-- {
+		logger.LogConsole("start server on port %v...", port)
+		err := http.ListenAndServe(address, nil)
+
+		if err != nil {
+			fmt.Printf("listen failed, reason is %s", err)
+			time.Sleep(1 * time.Second)
+			continue
+		}
+
+		break loop
+	}
+
+	listen_fail = true
+	logger.LogConsole("The startup service listening on port 9101 has failed 99 times, and the main program will exit")
+
 }
 
 func run_client_mode() {
@@ -69,33 +81,67 @@ func run_controller_mode() {
 	logger.LogConsole("runmode - controller")
 }
 
-func run_prometheus_client(interval int) {
-	//1、初始化prometheus对象
-	//2、起一个服务监听对应端口
-	totalTime := time.Duration(GLOBAL_VAR.runtotaltime) * time.Second
-	intervalTime := time.Duration(interval) * time.Second
+// 逻辑: 起线程监听9101端口并响应, 主程序循环采集数据
+func run_prometheus_client(totalTime int, interval int, port int) {
 
-	go start_http_server(9101)
-	logger.LogConsole("runmode - prometheus client")
-	ticker := time.NewTicker(intervalTime)
-	defer ticker.Stop()
-	timeout := time.After(totalTime)
+	// 监听并响应采集数据
+	go start_http_server(port)
+
+	startTime := time.Now().UnixNano()
+	futureEndTime := startTime + int64(totalTime)*1e9
+
 loop:
 	for {
-		select {
-		case <-ticker.C:
-			collect.GetAllDatas()
-		case <-timeout:
+
+		// 记录开始时间
+		_start := time.Now().UnixNano()
+
+		collect.GetAllDatas()
+
+		// 记录结束时间
+		_end := time.Now().UnixNano()
+
+		// 记录时间差
+		_diff := _end - _start
+
+		_seconds := float64(_diff) / 1e9
+
+		_need_reload_log := fmt.Sprintf("gauge data spend %v nano second", _seconds)
+
+		logger.LogConsole(_need_reload_log)
+
+		_spendTime := float64(interval) - _seconds
+		if _spendTime > 0 {
+			time.Sleep(time.Duration(_spendTime * float64(time.Second)))
+		}
+
+		if _end > futureEndTime || listen_fail {
 			break loop
 		}
 	}
+
 }
 
-func run_update_mode() {
+func metricsHandler(w http.ResponseWriter, r *http.Request) {
+	lock.Lock()
+	defer lock.Unlock()
+
+	output := "# HELP cpu_percent CPU 使用百分比\n# TYPE cpu_percent gauge\n"
+	for mode, value := range collect.GaugeCPUData {
+		output += fmt.Sprintf("cpu_percent{mode=\"%s\"} %s\n", mode, value)
+	}
+
+	w.Header().Set("Content-Type", "text/plain")
+	w.Write([]byte(output))
+}
+
+// 调试逻辑
+func run_test_mode() {
 	logger.LogConsole("runmode - update")
 }
 
-func run_test_mode(remote_host string, remote_port int) {
+// 将项目编译并上传到远端
+func run_upload_mode(remote_host string, remote_port int) {
 	logger.LogConsole("runmode - test")
 	localclient.RunCMD("d: & cd d:/Git_Code/indicator/indicator/ & dir")
 	localclient.RunCMD("set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows")
@@ -109,17 +155,24 @@ func run_test_mode(remote_host string, remote_port int) {
 func main() {
 
 	switch GLOBAL_VAR.runmode {
+
 	case "client":
 		run_client_mode()
+
 	case "controller":
 		run_controller_mode()
+
+	// 作为prometheus client运行
 	case "agent":
-		run_prometheus_client(GLOBAL_VAR.monitorinterval)
-	case "update":
-		run_update_mode()
-	case "test":
+		run_prometheus_client(GLOBAL_VAR.runtotaltime, GLOBAL_VAR.monitorinterval, 9101)
+
+	// 编译并上传代码到指定服务器
+	case "upload":
 		// 目前作为upload使用
-		run_test_mode("106.15.6.164", 22)
+		run_upload_mode("106.15.6.164", 22)
+
+	// 测试代码
+	case "test":
+		run_test_mode()
 	}
-	// logger.LogConsole(GLOBAL_VAR)
 }
