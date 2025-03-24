@@ -2,7 +2,7 @@ package localclient
 
 import (
 	"context"
-	"indicator/cmd/logger"
+	"indicator/internal/logger"
 	"os/exec"
 	"reflect"
 	"runtime"

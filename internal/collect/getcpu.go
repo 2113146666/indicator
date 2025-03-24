@@ -3,7 +3,7 @@ package collect
 import (
 	"bytes"
 	"fmt"
-	"indicator/cmd/logger"
+	"indicator/internal/logger"
 	"os"
 	"strconv"
 	"strings"
