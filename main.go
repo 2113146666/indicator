@@ -142,11 +142,11 @@ func run_test_mode() {
 
 // 将项目编译并上传到远端
 func run_upload_mode(remote_host string, remote_port int) {
-	logger.LogConsole("runmode - test")
+	logger.LogConsole("runmode - upload")
 	localclient.RunCMD("d: & cd d:/Git_Code/indicator/indicator/ & dir")
-	localclient.RunCMD("set GOOS=linux& go build -o indicator ./main.go & set GOOS=windows")
+	localclient.RunCMD("set GOOS=linux& go build -o ./cmd/indicator/indicator ./main.go & set GOOS=windows")
 	// localclient.RunCMD(string(fmt.Sprintf(`scp -P %v "D:\Git_Code\indicator\indicator\indicator" root@%v:/root/`, remote_port, remote_host)))
-	upload_cmd := fmt.Sprintf("scp -P %v D:/golang/project/indicator/indicator root@%v:/root/", remote_port, remote_host)
+	upload_cmd := fmt.Sprintf("scp -P %v D:/golang/project/indicator/cmd/indicator/indicator root@%v:/root/", remote_port, remote_host)
 	logger.LogConsole(upload_cmd, reflect.TypeOf(upload_cmd))
 	localclient.RunCMD(upload_cmd)
 	logger.LogConsole("upload end")

@@ -17,7 +17,15 @@ func init() {
 		log.Fatalf("Failed to get current working directory: %v", err)
 	}
 
-	filePath := filepath.Join(currentPath, "output.log")
+	dir := "./output"
+
+	if _, err := os.Stat(dir); os.IsNotExist(err) {
+		if err := os.Mkdir(dir, 0755); err != nil {
+			return
+		}
+	}
+
+	filePath := filepath.Join(currentPath, "./output/output.log")
 	logFile, err := os.OpenFile(filePath, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
 	if err != nil {
 		log.Fatalf("Failed to open log file: %v", err)
