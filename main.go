@@ -128,7 +128,7 @@ func metricsHandler(w http.ResponseWriter, r *http.Request) {
 
 	output := "# HELP cpu_percent CPU 使用百分比\n# TYPE cpu_percent gauge\n"
 	for mode, value := range collect.GaugeCPUData {
-		output += fmt.Sprintf("cpu_percent{mode=\"%s\"} %s\n", mode, value)
+		output += fmt.Sprintf("cpu_percent{mode=\"%s\"} %v\n", mode, value.Load())
 	}
 
 	w.Header().Set("Content-Type", "text/plain")

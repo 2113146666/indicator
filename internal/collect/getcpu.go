@@ -7,10 +7,11 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"sync/atomic"
 	"time"
 )
 
-var GaugeCPUData = make(map[string]string)
+var GaugeCPUData = make(map[string]*atomic.Pointer[string])
 var procStatSlice = []string{"user", "nice", "system", "idle", "iowait", "irq", "softirq", "steal", "guest"}
 
 func getCPUData() map[string]uint64 {
@@ -54,7 +55,7 @@ func calculateUsage(first, second map[string]uint64) {
 			logger.LogConsole(_sync)
 		}
 
-		GaugeCPUData[key] = fmt.Sprintf("%.2f", float64(v2-v1))
+		GaugeCPUData[key].Store(newStringPtr(fmt.Sprintf("%.2f", float64(v2-v1))))
 
 	}
 }
@@ -64,4 +65,9 @@ func getCPUInfo() {
 	time.Sleep(1 * time.Second)
 	secondData := getCPUData()
 	calculateUsage(firstData, secondData)
+}
+
+// 辅助函数：将字符串转为 *string
+func newStringPtr(s string) *string {
+	return &s
 }
