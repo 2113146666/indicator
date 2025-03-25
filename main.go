@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"indicator/internal/collect"
+	"indicator/internal/common"
 	"indicator/internal/localclient"
 	"indicator/internal/logger"
 	"net/http"
@@ -128,7 +129,12 @@ func metricsHandler(w http.ResponseWriter, r *http.Request) {
 
 	output := "# HELP cpu_percent CPU 使用百分比\n# TYPE cpu_percent gauge\n"
 	for mode, value := range collect.GaugeCPUData {
-		output += fmt.Sprintf("cpu_percent{mode=\"%s\"} %v\n", mode, value.Load())
+		output += fmt.Sprintf("cpu_percent{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
+	}
+
+	output += "# HELP MEM 使用MB\n# TYPE mem_info gauge\n"
+	for mode, value := range collect.GaugeMEMData {
+		output += fmt.Sprintf("mem_mb{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
 	}
 
 	w.Header().Set("Content-Type", "text/plain")

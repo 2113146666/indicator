@@ -3,9 +3,9 @@ package collect
 import (
 	"bytes"
 	"fmt"
+	"indicator/internal/common"
 	"indicator/internal/logger"
 	"os"
-	"strconv"
 	"strings"
 	"sync/atomic"
 	"time"
@@ -14,6 +14,15 @@ import (
 var GaugeCPUData = make(map[string]*atomic.Pointer[string])
 var procStatSlice = []string{"user", "nice", "system", "idle", "iowait", "irq", "softirq", "steal", "guest"}
 
+// 初始化默认值
+func init() {
+	for _, tit := range procStatSlice {
+		GaugeCPUData[tit] = new(atomic.Pointer[string])
+		GaugeCPUData[tit].Store(common.NewStringPtr("0.00"))
+	}
+}
+
+// 获取数据
 func getCPUData() map[string]uint64 {
 	res := make(map[string]uint64)
 
@@ -35,18 +44,14 @@ func getCPUData() map[string]uint64 {
 				if strings.HasPrefix(key, "cpu_") {
 					key = strings.Replace(key, "cpu_", "cpuall_", 1)
 				}
-				res[key] = parseUint(fields[index+1])
+				res[key] = common.ParseUint(fields[index+1])
 			}
 		}
 	}
 	return res
 }
 
-func parseUint(b []byte) uint64 {
-	v, _ := strconv.ParseUint(string(b), 10, 64)
-	return v
-}
-
+// 作差
 func calculateUsage(first, second map[string]uint64) {
 	for key, v1 := range first {
 		v2, exists := second[key]
@@ -54,9 +59,12 @@ func calculateUsage(first, second map[string]uint64) {
 			_sync := fmt.Sprintf("%s is not exists", key)
 			logger.LogConsole(_sync)
 		}
+		value, exists := GaugeCPUData[key]
+		if !exists || value == nil {
+			GaugeCPUData[key] = new(atomic.Pointer[string])
+		}
 
-		GaugeCPUData[key].Store(newStringPtr(fmt.Sprintf("%.2f", float64(v2-v1))))
-
+		GaugeCPUData[key].Store(common.NewStringPtr(fmt.Sprintf("%.2f", float64(v2-v1))))
 	}
 }
 
@@ -65,9 +73,4 @@ func getCPUInfo() {
 	time.Sleep(1 * time.Second)
 	secondData := getCPUData()
 	calculateUsage(firstData, secondData)
-}
-
-// 辅助函数：将字符串转为 *string
-func newStringPtr(s string) *string {
-	return &s
 }
