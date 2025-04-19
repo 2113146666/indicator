@@ -127,7 +127,7 @@ func metricsHandler(w http.ResponseWriter, r *http.Request) {
 	lock.Lock()
 	defer lock.Unlock()
 
-	output := "# HELP cpu_percent CPU 使用百分比\n# TYPE cpu_percent gauge\n"
+	output := "# HELP cpu_percent CPU%\n# TYPE cpu_percent gauge\n"
 	for mode, value := range collect.GaugeCPUData {
 		output += fmt.Sprintf("cpu_percent{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
 	}
@@ -135,6 +135,11 @@ func metricsHandler(w http.ResponseWriter, r *http.Request) {
 	output += "# HELP MEM 使用MB\n# TYPE mem_info gauge\n"
 	for mode, value := range collect.GaugeMEMData {
 		output += fmt.Sprintf("mem_mb{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
+	}
+
+	output += "# HELP IO 使用%\n# TYPE io_percent gauge\n"
+	for mode, value := range collect.GaugeIOData {
+		output += fmt.Sprintf("io_percent{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
 	}
 
 	w.Header().Set("Content-Type", "text/plain")
@@ -152,7 +157,7 @@ func run_upload_mode(remote_host string, remote_port int) {
 	localclient.RunCMD("d: & cd d:/Git_Code/indicator/indicator/ & dir")
 	localclient.RunCMD("set GOOS=linux& go build -o ./cmd/indicator/indicator ./main.go & set GOOS=windows")
 	// localclient.RunCMD(string(fmt.Sprintf(`scp -P %v "D:\Git_Code\indicator\indicator\indicator" root@%v:/root/`, remote_port, remote_host)))
-	upload_cmd := fmt.Sprintf("scp -P %v D:/golang/project/indicator/cmd/indicator/indicator root@%v:/root/", remote_port, remote_host)
+	upload_cmd := fmt.Sprintf("scp -P %v D:/Git_Code/indicator/indicator/cmd/indicator/indicator root@%v:/root/", remote_port, remote_host)
 	logger.LogConsole(upload_cmd, reflect.TypeOf(upload_cmd))
 	localclient.RunCMD(upload_cmd)
 	logger.LogConsole("upload end")
