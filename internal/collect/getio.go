@@ -38,7 +38,7 @@ import (
 var GaugeIOData = make(map[string]*atomic.Pointer[string])
 var getIOCommand = "cat /proc/diskstats; sleep 1; echo '###split###'; cat /proc/diskstats"
 
-type DiskInfo struct {
+type IOInfo struct {
 	// majorNum          string
 	// minorNum          string
 	// devName           string
@@ -55,9 +55,9 @@ type DiskInfo struct {
 	weightTimeSpendIO int
 }
 
-// 解析/proc/diskstats数据返回一个DiskInfo类型的对象
-func parseIOData(data string) map[string]DiskInfo {
-	res := make(map[string]DiskInfo)
+// 解析/proc/diskstats数据返回一个IOInfo类型的对象
+func parseIOData(data string) map[string]IOInfo {
+	res := make(map[string]IOInfo)
 
 	dataSlice := strings.Split(data, "\n")
 	for _, disk := range dataSlice {
@@ -65,7 +65,7 @@ func parseIOData(data string) map[string]DiskInfo {
 		disk = re.ReplaceAllString(strings.TrimSpace(disk), " ")
 		diskSlice := strings.Split(disk, " ")
 		if len(diskSlice) >= 13 {
-			dataObj := DiskInfo{}
+			dataObj := IOInfo{}
 			weightTimeNum, err := strconv.Atoi(diskSlice[13])
 			if err == nil {
 				dataObj.weightTimeSpendIO = weightTimeNum
@@ -76,7 +76,7 @@ func parseIOData(data string) map[string]DiskInfo {
 	return res
 }
 
-func calculateUtill(first, second map[string]DiskInfo) {
+func calculateUtill(first, second map[string]IOInfo) {
 	// get io_utill
 	for diskname := range second {
 		diskUtil := diskname + "_ioutil"
