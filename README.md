@@ -48,9 +48,9 @@ Golang编写的计算机资源指标的采集工具，集成prometheus构建完�
 |               | 内核态           | /proc/stat#system | /                             |%|        /     |
 |               | 空闲等待         | /proc/stat#idle   | /                             |%|        /     |
 |               | 等待IO读写       | /proc/stat#iowait | /                             |%|        /     |
-|               | 硬中断           | /proc/stat#hardirq| /                             |%|        /     |
+|               | 硬中断           | /proc/stat#irq| /                             |%|        /     |
 |               | 软中断           | /proc/stat#softirq| /                             |%|        /     |
-|               | 宿主机资源竞争   | /proc/stat#hardirq| /                             |%|        /     |
+|               | 宿主机资源竞争   | /proc/stat#steal| /                             |%|        /     |
 | **内存**      | 总内存           | /proc/meminfo#memtotal | 总内存量                  | MB | / |
 |               | 已使用的物理内存  | /proc/meminfo#memused | total-free-buffer-cached  | MB | / |
 |               | 内存使用率       | /proc/meminfo#memused% | used / total             | % | <= 70% |
