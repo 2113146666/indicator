@@ -15,6 +15,11 @@ func gaugeData() {
 		output += fmt.Sprintf("cpu_percent{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
 	}
 
+	output += "# HELP Vmstat times\n# TYPE Vmstat gauge\n"
+	for mode, value := range GaugeVmstatData {
+		output += fmt.Sprintf("vmstat{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
+	}
+
 	output += "# HELP MEM avail MB\n# TYPE mem_info gauge\n"
 	for mode, value := range GaugeMEMData {
 		output += fmt.Sprintf("mem_mb{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
@@ -36,6 +41,7 @@ func gaugeData() {
 // 数据采集入口
 func GetAllDatas() {
 	getCPUInfo()
+	getVMStatData()
 	getMEMInfo()
 	getIOInfo()
 	getDiskInfo()
