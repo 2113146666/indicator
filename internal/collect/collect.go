@@ -35,16 +35,22 @@ func gaugeData() {
 		output += fmt.Sprintf("disk_percent{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
 	}
 
+	output += "# HELP Sock Stat inuse num\n# TYPE sockstat gauge\n"
+	for mode, value := range GaugeSockStatData {
+		output += fmt.Sprintf("sockstat{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
+	}
+
 	GaugeAllData.Store(common.NewStringPtr(output))
 }
 
 // 数据采集入口
 func GetAllDatas() {
 	getCPUInfo()
-	getVMStatData()
+	getVMStatInfo()
 	getMEMInfo()
 	getIOInfo()
 	getDiskInfo()
+	getSockStatInfo()
 	// 数据拼接
 	gaugeData()
 }

@@ -10,7 +10,7 @@ import (
 var vmstatCMD = "vmstat -a -w -S K 1 2"
 var GaugeVmstatData = make(map[string]*atomic.Pointer[string])
 
-func getVMStatData() {
+func getVMStatInfo() {
 	result := localclient.RunCMD(vmstatCMD)
 	resSlice := strings.Split(result, "\n")
 	if len(resSlice) < 4 {
