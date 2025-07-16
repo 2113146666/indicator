@@ -34,3 +34,11 @@ func ParseUint(b []byte) uint64 {
 	v, _ := strconv.ParseUint(string(b), 10, 64)
 	return v
 }
+
+func Int(st string) int {
+	value, err := strconv.Atoi(st)
+	if err != nil {
+		return 0
+	}
+	return value
+}

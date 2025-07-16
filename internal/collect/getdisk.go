@@ -14,15 +14,15 @@ import (
 var GaugeDiskData = make(map[string]*atomic.Pointer[string])
 var getDiskCommand = "df -Thm"
 
-type DiskInfo struct {
-	filesystem string
-	diskType   string
-	blocks     string
-	used       string
-	available  string
-	usePercent string
-	mounted    string
-}
+// type DiskInfo struct {
+// 	filesystem string
+// 	diskType   string
+// 	blocks     string
+// 	used       string
+// 	available  string
+// 	usePercent string
+// 	mounted    string
+// }
 
 // 解析df -Thm数据
 func getDiskInfo() {
@@ -51,8 +51,20 @@ func getDiskInfo() {
 			logger.LogConsole("failed, reason is use% is not int: %v", diskInfo[5])
 		}
 
-		_storageuse := float64(diskstorage) / 100
+		GaugeDiskData[diskname].Store(common.NewStringPtr(fmt.Sprintf("%.2f", float64(diskstorage))))
 
-		GaugeDiskData[diskname].Store(common.NewStringPtr(fmt.Sprintf("%.2f", _storageuse)))
+		// 后续优化
+		diskname = diskInfo[0] + "#avail"
+		_, exists = GaugeDiskData[diskname]
+		if !exists {
+			GaugeDiskData[diskname] = new(atomic.Pointer[string])
+		}
+
+		diskAvail, err := strconv.Atoi(diskInfo[4])
+		if err != nil {
+			logger.LogConsole("failed, reason is use% is not int: %v", diskInfo[4])
+		}
+
+		GaugeDiskData[diskname].Store(common.NewStringPtr(fmt.Sprintf("%v", diskAvail)))
 	}
 }

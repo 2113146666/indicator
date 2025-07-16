@@ -144,7 +144,7 @@ func run_test_mode() {
 func run_upload_mode(remote_host string, remote_port int) {
 	logger.LogConsole("runmode - upload")
 	localclient.RunCMD("d: & cd d:/Git_Code/indicator/indicator/ & dir")
-	localclient.RunCMD("set GOOS=linux& go build -o ./cmd/indicator/indicator ./main.go & set GOOS=windows")
+	localclient.RunCMD("set GOOS=linux& go build -p 8 -o ./cmd/indicator/indicator ./main.go & set GOOS=windows")
 	// localclient.RunCMD(string(fmt.Sprintf(`scp -P %v "D:\Git_Code\indicator\indicator\indicator" root@%v:/root/`, remote_port, remote_host)))
 	user, _ := user.Current()
 	sshKeyDir := filepath.Join(user.HomeDir, ".ssh/id_rsa_aliyun")

@@ -39,19 +39,19 @@ var GaugeIOData = make(map[string]*atomic.Pointer[string])
 var getIOCommand = "cat /proc/diskstats; sleep 1; echo '###split###'; cat /proc/diskstats"
 
 type IOInfo struct {
-	// majorNum          string
-	// minorNum          string
-	// devName           string
-	// readCount         string
-	// readMergeCount    string
-	// readSection       string
-	// readSpendTime     string
-	// writeCount        string
-	// writeMergeCount   string
-	// writeSection      string
-	// writeSpendTime    string
-	// ioRequests        string
-	// totalTimeSpendIO  string
+	majorNum          string
+	minorNum          string
+	devName           string
+	readCount         string
+	readMergeCount    string
+	readSection       string
+	readSpendTime     string
+	writeCount        string
+	writeMergeCount   string
+	writeSection      string
+	writeSpendTime    string
+	ioRequests        string
+	totalTimeSpendIO  string
 	weightTimeSpendIO int
 }
 

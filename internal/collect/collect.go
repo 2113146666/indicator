@@ -40,6 +40,11 @@ func gaugeData() {
 		output += fmt.Sprintf("sockstat{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
 	}
 
+	output += "# HELP Net DEV packets/s\n# TYPE netdev gauge\n"
+	for mode, value := range GaugeNetDevData {
+		output += fmt.Sprintf("netdev{mode=\"%s\"} %v\n", mode, common.PtrToString(value.Load()))
+	}
+
 	GaugeAllData.Store(common.NewStringPtr(output))
 }
 
@@ -51,6 +56,7 @@ func GetAllDatas() {
 	getIOInfo()
 	getDiskInfo()
 	getSockStatInfo()
+	getNetDev()
 	// 数据拼接
 	gaugeData()
 }
