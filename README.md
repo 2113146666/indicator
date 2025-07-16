@@ -4,6 +4,13 @@ Go语言编写的计算机资源指标的采集工具，集成prometheus构建�
 #### CPU MEM 负载
 <img width="2526" height="772" alt="image" src="https://github.com/user-attachments/assets/73b0b6d6-a5f0-48ef-bca0-0baf539de40a" />
 
+#### 网络连接状态 带宽
+<img width="2529" height="961" alt="image" src="https://github.com/user-attachments/assets/b3ace52c-320b-42a5-bc0b-5b725a045b9a" />
+
+#### 上下文切换 系统中断 队列 swap 吞吐 文件存储
+<img width="2545" height="803" alt="image" src="https://github.com/user-attachments/assets/07746c71-8f7f-4360-9981-5e923e452097" />
+
+
 ## 数据采集解析
 ### 系统级数据
 | 资源指标      | 数据项        | 数据来源| 描述                         |单位 | 告警限度|
@@ -30,19 +37,19 @@ Go语言编写的计算机资源指标的采集工具，集成prometheus构建�
 |               | 交换分区缓存     | /proc/meminfo#SwapCached | 交换空间中的数据被swap in读到缓冲区中占用的大小 | MB | / |
 |               | 空闲的交换空间   | /proc/meminfo#SwapFree  | 交换空间空闲的大小         | MB | / |
 |               | 共享内存         | /proc/meminfo#Shmem    | 已分配的共享内存的大小     | MB | / |
-| **上下文切换**     | 上下文切换次数           | 进程切换上下文的次数                                                 |
-| **中断次数**       | 中断发生次数             | 系统发生中断的次数                                                   |
-| **队列长度**       | 磁盘I/O请求队列长度      | 磁盘I/O请求的平均队列长度                                            |
-| **Swap/IO**        | Swap空间使用情况         | Swap空间的使用情况                                                   |
-|                    | 磁盘读写速度             | 磁盘读写数据的速度                                                   |
-|                    | 平均服务时间             | 完成磁盘I/O请求的平均时间                                            |
-| **网络**           | 网络连接状态             | 当前系统的网络连接状态                                               |
-|                    | 网络带宽                 | 网络传输数据的速度                                                   |
-|                    | 吞吐量                   | 网络传输数据的吞吐量                                                 |
-|                    | 延迟                     | 数据包从发送方到接收方的传输时间                                     |
-|                    | 错误和丢包率             | 网络传输中的错误和丢失数据包的比例                                   |
-| **文件存储**       | 文件系统使用情况         | 文件系统的使用情况和剩余空间                                         |
-| **磁盘性能**       | 磁盘I/O性能              | 磁盘的输入输出性能                                                   |
+| **上下文切换**     | 上下文切换次数           | vmstat/cs                                                 |
+| **中断次数**       | 中断发生次数             | vmstat/in                                                   |
+| **队列长度**       | 磁盘I/O请求队列长度      | vmstat/r&b                                            |
+| **Swap/IO**        | Swap空间使用情况         | vmstat/swap                                                   |
+|                    | 磁盘读写速度             | vmstat/bi&bo                                                   |
+|                    | 平均服务时间             | vmstat                                            |
+| **网络**           | 网络连接状态             | /proc/net/dev                                               |
+|                    | 网络带宽                 | /proc/net/dev                                                   |
+|                    | 吞吐量                   | /proc/net/dev                                                 |
+|                    | 延迟                     | /proc/net/dev                                     |
+|                    | 错误和丢包率             | /proc/net/dev                                   |
+| **文件存储**       | 文件系统使用情况         | df -Thm                                        |
+| **磁盘性能**       | 磁盘I/O性能              | /proc/diskstats;                                                   |
 
 
 ### /proc/loadavg 文件
