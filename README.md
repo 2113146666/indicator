@@ -1,8 +1,8 @@
-# Performance indicator collection
+# [基于golang] 性能资源指标采集
 Go语言编写的计算机资源指标的采集工具，集成prometheus构建完整的监控系统 
-采集图表如下所示:
-#### CPU&MEM
-![image](https://github.com/user-attachments/assets/88c4eccf-f482-4982-9720-034309d9d254)
+效果图如下所示:
+#### CPU MEM 负载
+<img width="2526" height="772" alt="image" src="https://github.com/user-attachments/assets/73b0b6d6-a5f0-48ef-bca0-0baf539de40a" />
 
 ## 数据采集解析
 ### 系统级数据
